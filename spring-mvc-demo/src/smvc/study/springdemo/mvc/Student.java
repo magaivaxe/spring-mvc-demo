@@ -7,10 +7,15 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String country;
+	private String favoriteLanguage;
+	
+	private String [] systems;
 	// Dictionary to countries
 	private LinkedHashMap<String, String> countryOptions;
 	// Dictionary to languages
 	private LinkedHashMap<String, String> languageOptions;
+	// LinkedHashMap to CheckBoxes
+	private LinkedHashMap<String, String> systemOptions;
 	
 	// Constructors
 	public Student() {
@@ -28,6 +33,11 @@ public class Student {
 		languageOptions.put("PHP", " PHP ");
 		languageOptions.put("Ruby", " Ruby ");
 		languageOptions.put("Javascript", " Javascript ");
+		
+		systemOptions = new LinkedHashMap<>();
+		systemOptions.put("Windows", "Windows");
+		systemOptions.put("Linux", "Linux");
+		systemOptions.put("MacOS", "MacOS");
 	}
 	// Getters and Setters
 	public String getFirstName() {
@@ -53,6 +63,21 @@ public class Student {
 	}
 	public LinkedHashMap<String, String> getLanguageOptions() {
 		return languageOptions;
+	}
+	public String[] getSystems() {
+		return systems;
+	}
+	public void setSystems(String[] systems) {
+		this.systems = systems;
+	}
+	public LinkedHashMap<String, String> getSystemOptions() {
+		return systemOptions;
+	}
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
 	}
 	
 	
