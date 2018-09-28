@@ -7,9 +7,10 @@ public class Student {
 	private String firstName;
 	private String lastName;
 	private String country;
-	
+	// Dictionary to countries
 	private LinkedHashMap<String, String> countryOptions;
-	private String favoriteLanguage;
+	// Dictionary to languages
+	private LinkedHashMap<String, String> languageOptions;
 	
 	// Constructors
 	public Student() {
@@ -20,6 +21,13 @@ public class Student {
 		countryOptions.put("DE", "Germany");
 		countryOptions.put("IN", "India");
 		countryOptions.put("CA", "Canada");
+		
+		languageOptions = new LinkedHashMap<>();
+		languageOptions.put("Java", " Java ");
+		languageOptions.put("C#", " C# ");
+		languageOptions.put("PHP", " PHP ");
+		languageOptions.put("Ruby", " Ruby ");
+		languageOptions.put("Javascript", " Javascript ");
 	}
 	// Getters and Setters
 	public String getFirstName() {
@@ -43,12 +51,10 @@ public class Student {
 	public LinkedHashMap<String, String> getCountryOptions() {
 		return countryOptions;
 	}
-	public String getFavoriteLanguage() {
-		return favoriteLanguage;
+	public LinkedHashMap<String, String> getLanguageOptions() {
+		return languageOptions;
 	}
-	public void setFavoriteLanguage(String favoriteLanguage) {
-		this.favoriteLanguage = favoriteLanguage;
-	}
+	
 	
 	
 }
