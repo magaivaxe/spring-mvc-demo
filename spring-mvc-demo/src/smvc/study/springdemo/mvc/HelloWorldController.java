@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello") //parent requestMapping to mapping child's
 public class HelloWorldController {
 	
 	// need a controller method to show initial html form
