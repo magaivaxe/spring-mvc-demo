@@ -8,7 +8,7 @@ public class Customer {
 	private String firstName;
 	
 	// Annotations to validation
-	@NotNull @Size(min=1, message="is required")
+	@NotNull(message="is required") @Size(min=1, message="is required")
 	private String lastName;
 
 	public String getFirstName() {
