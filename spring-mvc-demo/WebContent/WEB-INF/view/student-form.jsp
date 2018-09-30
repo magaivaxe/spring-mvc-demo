@@ -29,6 +29,7 @@
 	
 	<br><br>
 	
+    Operating Systems: 
 	<form:checkboxes path="systems" items="${student.systemOptions}"/>
 	
 	<br><br>

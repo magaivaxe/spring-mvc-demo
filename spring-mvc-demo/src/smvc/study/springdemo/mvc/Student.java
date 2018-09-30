@@ -35,9 +35,9 @@ public class Student {
 		languageOptions.put("Javascript", " Javascript ");
 		
 		systemOptions = new LinkedHashMap<>();
-		systemOptions.put("Windows", "Windows");
-		systemOptions.put("Linux", "Linux");
-		systemOptions.put("MacOS", "MacOS");
+		systemOptions.put("Windows", " Windows ");
+		systemOptions.put("Linux", " Linux ");
+		systemOptions.put("MacOS", " MacOS ");
 	}
 	// Getters and Setters
 	public String getFirstName() {
