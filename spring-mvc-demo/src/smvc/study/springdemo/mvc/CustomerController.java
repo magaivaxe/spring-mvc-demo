@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.context.Theme;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -39,6 +40,10 @@ public class CustomerController {
 	public String processForm(
 			@Valid @ModelAttribute("customer") Customer customer,
 			BindingResult bindingResult) {
+		
+		System.out.println("Binding result: " + bindingResult);
+		System.out.println("\n\n\n\n");
+		
 		// Condition to show confirmation page
 		if (bindingResult.hasErrors()) {
 			return "customer-form";
@@ -47,3 +52,32 @@ public class CustomerController {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
