@@ -30,7 +30,7 @@ public class Customer {
 	
 	// The default value is LUV that is defined in annotation, but the other values can be 
 	// defined here
-	@CourseCode(value="MPS",message="It must be the fucker!")
+	@CourseCode(value= {"MPS", "VER"},message="must start with MPS and VER!")
 	private String courseCode;
 
 	public String getFirstName() {
